@@ -1,19 +1,38 @@
 import React from 'react';
-import { BsFacebook } from "react-icons/bs"
+import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
+
 const HeaderTop = () => {
   return (
     <div className="border-b border-gray-200 hidden sm:block">
       <div className="container py-4">
         <div className="flex justify-between items-center">
-          <div className="hidden lg:flex gap-1">
-            <div className='header_top_icon_wrapper'><BsFacebook /></div>
-            <div className='header_top_icon_wrapper'><BsInstagram /></div>
-            <div className='header_top_icon_wrapper'><BsTwitter /></div>
-            <div className='header_top_icon_wrapper'><BsLinkedin /></div>
+          <div className="flex gap-4">
+            <div className='header_top_icon_wrapper'>
+              <BsFacebook />
+            </div>
+            <div className='header_top_icon_wrapper'>
+              <RiInstagramFill />
+            </div>
+            <div className='header_top_icon_wrapper'>
+              <BsTwitter />
+            </div>
+            <div className='header_top_icon_wrapper'>
+              <BsLinkedin />
+            </div>
+          </div>
+          <div className='text-gray-500 text-[12px]'>
+            <b>FREE SHIPPING</b> THIS WEEK ON ORDERS OVER - $55
+          </div>
+          <div className="flex items-center gap-4">
+            <select className="border border-gray-300 rounded p-1">
+              <option value="USD">USD $</option>
+              <option value="EUR">EUR €</option>
+            </select>
+            <select className="border border-gray-300 rounded p-1">
+              <option value="english">English</option>
+              <option value="Tigrigna">Tigrigna</option>
+            </select>
           </div>
         </div>
       </div>
