@@ -22,17 +22,26 @@ const HeaderTop = () => {
             </div>
           </div>
           <div className='text-gray-500 text-[12px]'>
-            <b>FREE SHIPPING</b> THIS WEEK ON ORDERS OVER - $55
+            <b>FREE SHIPPING</b> 
+            ኣብዚ ሰሙን ልዕሊ - $55 ብዝተኣዘዙ ምልኣኽ
           </div>
           <div className="flex items-center gap-4">
-            <select className="border border-gray-300 rounded p-1">
-              <option value="USD">USD $</option>
-              <option value="EUR">EUR €</option>
-            </select>
-            <select className="border border-gray-300 rounded p-1">
-              <option value="english">English</option>
-              <option value="Tigrigna">Tigrigna</option>
-            </select>
+          <select 
+        name="currency" 
+       id="currency" 
+      className="border border-gray-300 rounded p-1"
+    >
+  <option value="USD">USD $</option>
+  <option value="EUR">EUR €</option>
+    </select>
+    <select 
+  name="language" 
+  id="language" 
+  className="border border-gray-300 rounded p-1"
+    >
+  <option value="english">English</option>
+  <option value="Tigrigna">Tigrigna</option>
+      </select>
           </div>
         </div>
       </div>
