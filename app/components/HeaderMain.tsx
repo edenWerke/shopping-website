@@ -2,6 +2,7 @@ import React from 'react';
 import { BsSearch } from "react-icons/bs";
 import { FaRegHeart , FaShoppingBag } from 'react-icons/fa';
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import { BiUser } from "react-icons/bi";
 const HeaderMain = () => {
   return (
     <div className="border-b border-gray-200 py-6">
@@ -20,14 +21,18 @@ const HeaderMain = () => {
         </div>
         <div className="flex items-center gap-3"> {/* Reduced gap to 2 */}
           <div className="relative">
+            <BiUser className="text-gray-600 text-[32px]" />
+          
+          </div>
+          <div className="relative">
             <FaRegHeart className="text-gray-600 text-[32px]" />
-            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[20px] h-[20px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
+            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
               0
             </div>
           </div>
           <div className="relative">
             <HiOutlineShoppingBag  className="text-gray-600 text-[32px]" />
-            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[20px] h-[20px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
+            <div className="bg-red-600 rounded-full absolute top-0 right-0  w-[18px] h-[18px] text-[12px] text-white grid place-items-center translate-x-1 translate-y-1">
               0
             </div>
           </div>
