@@ -8,7 +8,7 @@ const HeaderMain = () => {
     <div className="border-b border-gray-200 py-6">
       <div className="container sm:flex justify-between items-center">
         <div className="font-bold text-4xl text-center sm:pb-0">
-          <span className="text-pink-500">SH</span>
+          <span className="text-red-600">SH</span>
           <span className="text-gray-500">OP</span>
         </div>
         <div className="w-full sm:w-[300px] md:w-[70%] relative">

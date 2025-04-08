@@ -24,14 +24,14 @@ const Hero = () => {
     },
     {
       id: 1,
-      img: "/banner-2.jpg",
+      img: "/banner-1.jpg",
       title: "Trending Accessories",
       mainTitle: "MODERN SUNGLASSES",
       price: "$15"
     },
     {
       id: 2,
-      img: "/banner-3.jpg",
+      img: "/banner-1.jpg",
       title: "Sales offfer",
       mainTitle: "NEW FASHION SUMMMER SALES",
       price: "$15"
