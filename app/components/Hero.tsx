@@ -1,7 +1,11 @@
+"use client"
+
 import React from 'react';
 
+import Slider from "react-slick"
+import Slide from './Slide';
 const Hero = () => {
-  const setting = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -35,9 +39,21 @@ const Hero = () => {
   ];
 
   return (
-    <div>
-      <h1>Hero</h1>
-      {/* Your slider implementation should go here, and you can use the 'setting' and 'slideData' */}
+    <div >
+        <div className="container pt-6 lg:pt-0"></div>
+<Slider {...settings}>
+    {slideData.map((item)=>(
+        <Slide
+        key={item.id}
+        img={item.img}
+        title={item.title}
+        mainTitle={item.mainTitle}
+        price={item.price}
+        
+        
+        />
+    ))}
+</Slider>
     </div>
   );
 }
